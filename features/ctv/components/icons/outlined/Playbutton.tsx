@@ -1,0 +1,10 @@
+import { SVGProps } from "react";
+
+export function Playbutton(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" {...props}>
+      <path fillRule="evenodd" clipRule="evenodd" d="M13.5 12.6667H2.5C1.11929 12.6667 0 11.5474 0 10.1667V2.5C0 1.11929 1.11929 0 2.5 0H13.5C14.8807 0 16 1.11929 16 2.5V10.1667C16 11.5474 14.8807 12.6667 13.5 12.6667ZM13.5 11.6667C14.3284 11.6667 15 10.9951 15 10.1667V2.5C15 1.67157 14.3284 1 13.5 1H2.5C1.67157 1 1 1.67157 1 2.5V10.1667C1 10.9951 1.67157 11.6667 2.5 11.6667H13.5Z" />
+      <path fillRule="evenodd" clipRule="evenodd" d="M6 3.83333V8.83333C6 9.22198 6.42399 9.46204 6.75725 9.26208L10.9239 6.76208C11.2476 6.56788 11.2476 6.09879 10.9239 5.90459L6.75725 3.40459C6.42399 3.20463 6 3.44469 6 3.83333ZM7 4.71643L9.69484 6.33333L7 7.95024V4.71643Z" />
+    </svg>
+  );
+}

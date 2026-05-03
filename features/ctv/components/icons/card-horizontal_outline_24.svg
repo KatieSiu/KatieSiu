@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <polygon id="card-horizontal_outline_24-a" points="0 947.5 222 947.5 222 0 0 0"/>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(-444 -204)">
+    <g transform="translate(354 144)">
+      <mask id="card-horizontal_outline_24-b" fill="#fff">
+        <use xlink:href="#card-horizontal_outline_24-a"/>
+      </mask>
+      <polygon fill="#000" points="90.75 70.25 112.75 70.25 112.75 68.75 90.75 68.75" mask="url(#card-horizontal_outline_24-b)"/>
+      <path fill="#000" fill-rule="nonzero" d="M90.75,71 L112.75,71 C113.164214,71 113.5,70.6642136 113.5,70.25 L113.5,68.75 C113.5,68.3357864 113.164214,68 112.75,68 L90.75,68 C90.3357864,68 90,68.3357864 90,68.75 L90,70.25 C90,70.6642136 90.3357864,71 90.75,71 Z" mask="url(#card-horizontal_outline_24-b)"/>
+      <g fill="#000" mask="url(#card-horizontal_outline_24-b)">
+        <g transform="translate(99 75)">
+          <path d="M7.75,1.25 L1.25,1.25"/>
+          <path fill-rule="nonzero" d="M7.75,0.5 L1.25,0.5 C0.835786438,0.5 0.5,0.835786438 0.5,1.25 C0.5,1.66421356 0.835786438,2 1.25,2 L7.75,2 C8.16421356,2 8.5,1.66421356 8.5,1.25 C8.5,0.835786438 8.16421356,0.5 7.75,0.5 Z"/>
+        </g>
+      </g>
+      <g fill="#000" mask="url(#card-horizontal_outline_24-b)">
+        <g transform="translate(92.5 75)">
+          <path d="M4.75,1.25 L1.25,1.25"/>
+          <path fill-rule="nonzero" d="M4.75,0.5 L1.25,0.5 C0.835786438,0.5 0.5,0.835786438 0.5,1.25 C0.5,1.66421356 0.835786438,2 1.25,2 L4.75,2 C5.16421356,2 5.5,1.66421356 5.5,1.25 C5.5,0.835786438 5.16421356,0.5 4.75,0.5 Z"/>
+        </g>
+      </g>
+      <path fill="#000" fill-rule="nonzero" d="M110.25,80.5 L93.75,80.5 C91.6792864,80.5 90,78.8207136 90,76.75 L90,67.25 C90,65.1792864 91.6792864,63.5 93.75,63.5 L110.25,63.5 C112.320714,63.5 114,65.1792864 114,67.25 L114,76.75 C114,78.8207136 112.320714,80.5 110.25,80.5 Z M110.25,79 C111.492286,79 112.5,77.9922864 112.5,76.75 L112.5,67.25 C112.5,66.0077136 111.492286,65 110.25,65 L93.75,65 C92.5077136,65 91.5,66.0077136 91.5,67.25 L91.5,76.75 C91.5,77.9922864 92.5077136,79 93.75,79 L110.25,79 Z" mask="url(#card-horizontal_outline_24-b)"/>
+    </g>
+    <polygon points="444 228 468 228 468 204 444 204"/>
+  </g>
+</svg>

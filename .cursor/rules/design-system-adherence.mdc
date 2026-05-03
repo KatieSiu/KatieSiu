@@ -1,0 +1,13 @@
+---
+description: Keep the top-level index aligned with the Figma-backed style guide
+globs: app/page.tsx,app/style-guide/page.tsx,features/design-system/**
+alwaysApply: false
+---
+
+# Design System Adherence
+
+- Treat Figma frame `26:15603` as the current source of truth for the top-level index page styles.
+- Keep `features/design-system/tokens.ts` limited to the colors and font styles shown in that frame.
+- Use `/style-guide` only as an unlinked internal reference for the top-level `app/page.tsx`.
+- Do not apply this style guide to `app/ctv`, `app/campaign-planner`, `features/ctv`, or `features/campaign-planner`.
+- Do not add assets, spacing, radius, shadows, or component examples until the user provides them.
