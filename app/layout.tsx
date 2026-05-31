@@ -26,7 +26,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Linear Interview Prototypes",
+  title: "katiesiu",
   description: "Home for the CTV and Campaign Planner prototypes.",
 };
 

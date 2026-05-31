@@ -1,4 +1,4 @@
-# Linear Interview Prototypes
+# katiesiu
 
 This is one merged Next.js app for the two interview prototypes.
 

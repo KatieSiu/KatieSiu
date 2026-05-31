@@ -1,5 +1,5 @@
 export const designSystemMeta = {
-  name: "Linear landing page prototype",
+  name: "katiesiu",
   source: "Figma MCP",
   status: "Limited to the colors and font styles shown in Figma frame 26:15603.",
   figmaNode: "26:15603",
