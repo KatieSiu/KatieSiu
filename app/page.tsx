@@ -24,7 +24,7 @@ const bodyMutedColor = bodyStyle.color;
 const sections = [
   {
     id: "langchain-alt",
-    title: "AI Evaluator Exploration",
+    title: "AI Evaluator",
     company: "Intelligence",
     cta: "See Prototype",
     href: "/intelligence",
@@ -87,7 +87,7 @@ const sections = [
 const heroCards = [
   {
     section: sections[0],
-    label: "AI Evaluator Exploration",
+    label: "AI Evaluator",
     image: "/prototype-index/hero-cards/langchain-alt.png",
     rotation: -9,
     y: 7,
