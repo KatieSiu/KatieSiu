@@ -23,6 +23,18 @@ const bodyMutedColor = bodyStyle.color;
 
 const sections = [
   {
+    id: "langchain-alt",
+    title: "LangChain Alt",
+    company: "Intelligence",
+    cta: "See Prototype",
+    href: "/intelligence",
+    body: [
+      "AI development/LLMops tools like LangSmith and Braintrust have experienced concentrated hyper growth at the expense of thoughtful UX.",
+      "In addition to a myriad of unexpected interactions, layouts, and circular workflows, the fundamental issue I want to highlight is product hierarchy and information architecture.",
+      "There is an opportunity to learn from what has enabled these tools to succeed, and where they could continue to improve. In both tools, teams are forced to build their evaluators, metrics, and frameworks in siloes, resulting an enormous amount of rework and eventual disconnect.",
+    ],
+  },
+  {
     id: "connected-tv",
     title: "Connected TV",
     company: "Meta",
@@ -44,18 +56,6 @@ const sections = [
       "Media planning is a critical step for brand advertisers as they manage substantial budgets with high impact ROI goals. Meta invested in tools to help advertisers plan their large brand budgets in 2016, but haven’t updated them since.",
       "By revisiting its campaign planning tools, Meta can be a serious competitor in the $150B+ brand advertising market, better serving customers and capturing more brand budget.",
       "Working with a lean team on a tight timeline, I led the campaign planner redesign by prototyping multiple iterations of the experience, evaluating them internally and externally, then partnering closely with engineering and product to bring it to production.",
-    ],
-  },
-  {
-    id: "langchain-alt",
-    title: "LangChain Alt",
-    company: "Intelligence",
-    cta: "See Prototype",
-    href: "/intelligence",
-    body: [
-      "AI development/LLMops tools like LangSmith and Braintrust have experienced concentrated hyper growth at the expense of thoughtful UX.",
-      "In addition to a myriad of unexpected interactions, layouts, and circular workflows, the fundamental issue I want to highlight is product hierarchy and information architecture.",
-      "There is an opportunity to learn from what has enabled these tools to succeed, and where they could continue to improve. In both tools, teams are forced to build their evaluators, metrics, and frameworks in siloes, resulting an enormous amount of rework and eventual disconnect.",
     ],
   },
   {
@@ -87,22 +87,22 @@ const sections = [
 const heroCards = [
   {
     section: sections[0],
-    label: "Connected TV",
-    image: "/prototype-index/hero-cards/connected-tv.png",
+    label: "LangChain Alt",
+    image: "/prototype-index/hero-cards/langchain-alt.png",
     rotation: -9,
     y: 7,
   },
   {
     section: sections[1],
-    label: "Campaign Planner",
-    image: "/prototype-index/hero-cards/campaign-planner.png",
+    label: "Connected TV",
+    image: "/prototype-index/hero-cards/connected-tv.png",
     rotation: -4,
     y: -3,
   },
   {
     section: sections[2],
-    label: "LangChain Alt",
-    image: "/prototype-index/hero-cards/langchain-alt.png",
+    label: "Campaign Planner",
+    image: "/prototype-index/hero-cards/campaign-planner.png",
     rotation: 0,
     y: -5,
   },
@@ -134,8 +134,8 @@ const avatarSrc: Record<AvatarColor, string> = {
 const avatarColorOrder: AvatarColor[] = ["black", "blue", "red", "white"];
 
 const sectionAvatarMap: { id: string; color: AvatarColor }[] = [
-  { id: "campaign-planner", color: "red" },
   { id: "langchain-alt", color: "blue" },
+  { id: "campaign-planner", color: "red" },
   { id: "query-builder", color: "red" },
   { id: "dashboard-architecture", color: "white" },
 ];
@@ -582,6 +582,101 @@ export default function HomePage() {
         <section>
           <SectionIntro section={sections[0]} />
 
+          <figure className="mx-auto mt-24 max-w-[540px]">
+            <RevealOnScroll variant="media">
+              <ImageBlock
+                src="/prototype-index/langchain-alt/hero-full.png"
+                alt="Intelligence platform full view with three-panel drill-down."
+              />
+            </RevealOnScroll>
+            <RevealOnScroll variant="text">
+              <div
+                className="mx-auto mt-6 max-w-[540px] space-y-[26px]"
+                style={{
+                  color: bodyMutedColor,
+                  fontFamily: bodyStyle.fontFamily,
+                  fontSize: bodyStyle.size,
+                  fontWeight: bodyStyle.weight,
+                  letterSpacing: bodyStyle.letterSpacing,
+                  lineHeight: bodyStyle.lineHeight,
+                }}
+              >
+                <p>
+                  Above you'll see my high level take on a LangSmith redesign. Workspace and Project selections are now top-level navigation elements.
+                </p>
+                <p>
+                  The layout offers both clarity and focus. Workspace and project selections are top nav elements while the left navigation acts as the anchor for the three-panel drill down encouraging interactivity to dive deep in the weeds without getting lost.
+                </p>
+              </div>
+            </RevealOnScroll>
+          </figure>
+
+          <figure className="mx-auto mt-12 max-w-[540px]">
+            <RevealOnScroll variant="media">
+              <MediaFrame>
+                <ImageBlock
+                  src="/prototype-index/langchain-alt/filler.png"
+                  alt="Hand-drawn notebook diagram of methods for understanding agents."
+                />
+              </MediaFrame>
+            </RevealOnScroll>
+            <RevealOnScroll variant="text">
+              <div
+                className="mx-auto mt-6 max-w-[540px]"
+                style={{
+                  color: bodyMutedColor,
+                  fontFamily: bodyStyle.fontFamily,
+                  fontSize: bodyStyle.size,
+                  fontWeight: bodyStyle.weight,
+                  letterSpacing: bodyStyle.letterSpacing,
+                  lineHeight: bodyStyle.lineHeight,
+                }}
+              >
+                <p>
+                  The core purpose of these tools is to help teams understand their agents. These tools should be able to tell teams when and why their agent goes awry, and offer a way to proactively prevent drift as improvements ship, new models get incorporated, and user behavior changes.
+                </p>
+              </div>
+            </RevealOnScroll>
+          </figure>
+
+          <figure className="mx-auto mt-12 max-w-[540px]">
+            <RevealOnScroll variant="media">
+              <MediaFrame>
+                <ImageBlock
+                  src="/prototype-index/langchain-alt/figjam.png"
+                  alt="FigJam diagram comparing LangSmith and Braintrust architecture with a proposed scalable solution."
+                />
+              </MediaFrame>
+            </RevealOnScroll>
+            <RevealOnScroll variant="text">
+              <div
+                className="mx-auto mt-6 max-w-[540px] space-y-[26px]"
+                style={{
+                  color: bodyMutedColor,
+                  fontFamily: bodyStyle.fontFamily,
+                  fontSize: bodyStyle.size,
+                  fontWeight: bodyStyle.weight,
+                  letterSpacing: bodyStyle.letterSpacing,
+                  lineHeight: bodyStyle.lineHeight,
+                }}
+              >
+                <p>
+                  After analyzing the high level architecture of Braintrust and LangSmith, it seems that both focus on single/siloed-team enablement. Neither tools allow for core elements like Evaluators, Company metrics, or Prompt structures to be reused or templatetized so more novice teams can quickly adopt best practices and glean value from the tool. In this FigJam I've abstracted each tool&apos;s current structure, limitations, and provided my own proposal for a more scalable solution.{" "}
+                  <ExternalTextLink href="https://www.figma.com/board/bNWDIHhae8N4BMmwGgCBLr/LangSmith---Braintrust-Architecture-Evaluation?node-id=0-1&t=V9j8EVGsr3cjdALm-1">
+                    See link to FigJam
+                  </ExternalTextLink>
+                </p>
+              </div>
+            </RevealOnScroll>
+          </figure>
+
+        </section>
+
+        
+
+        <section className="mt-48">
+          <SectionIntro section={sections[1]} />
+
           <figure className="mx-auto mt-24 max-w-[541px]">
             <RevealOnScroll variant="text">
               <Caption>
@@ -681,7 +776,7 @@ export default function HomePage() {
         </section>
 
         <section className="mt-48">
-          <SectionIntro section={sections[1]} />
+          <SectionIntro section={sections[2]} />
           <figure className="mx-auto mt-24 max-w-[538px]">
             <RevealOnScroll variant="media">
               <VideoBlock src="/prototype-index/campaign-planner/videos/campaign-planner.mp4" className="bg-black" />
@@ -706,99 +801,6 @@ export default function HomePage() {
               </MediaFrame>
             </RevealOnScroll>
           </figure>
-        </section>
-
-        <section className="mt-48">
-          <SectionIntro section={sections[2]} />
-
-          <figure className="mx-auto mt-24 max-w-[540px]">
-            <RevealOnScroll variant="media">
-              <ImageBlock
-                src="/prototype-index/langchain-alt/hero-full.png"
-                alt="Intelligence platform full view with three-panel drill-down."
-              />
-            </RevealOnScroll>
-            <RevealOnScroll variant="text">
-              <div
-                className="mx-auto mt-6 max-w-[540px] space-y-[26px]"
-                style={{
-                  color: bodyMutedColor,
-                  fontFamily: bodyStyle.fontFamily,
-                  fontSize: bodyStyle.size,
-                  fontWeight: bodyStyle.weight,
-                  letterSpacing: bodyStyle.letterSpacing,
-                  lineHeight: bodyStyle.lineHeight,
-                }}
-              >
-                <p>
-                  Above you'll see my high level take on a LangSmith redesign. Workspace and Project selections are now top-level navigation elements.
-                </p>
-                <p>
-                  The layout offers both clarity and focus. Workspace and project selections are top nav elements while the left navigation acts as the anchor for the three-panel drill down encouraging interactivity to dive deep in the weeds without getting lost.
-                </p>
-              </div>
-            </RevealOnScroll>
-          </figure>
-
-          <figure className="mx-auto mt-12 max-w-[540px]">
-            <RevealOnScroll variant="media">
-              <MediaFrame>
-                <ImageBlock
-                  src="/prototype-index/langchain-alt/filler.png"
-                  alt="Hand-drawn notebook diagram of methods for understanding agents."
-                />
-              </MediaFrame>
-            </RevealOnScroll>
-            <RevealOnScroll variant="text">
-              <div
-                className="mx-auto mt-6 max-w-[540px]"
-                style={{
-                  color: bodyMutedColor,
-                  fontFamily: bodyStyle.fontFamily,
-                  fontSize: bodyStyle.size,
-                  fontWeight: bodyStyle.weight,
-                  letterSpacing: bodyStyle.letterSpacing,
-                  lineHeight: bodyStyle.lineHeight,
-                }}
-              >
-                <p>
-                  The core purpose of these tools is to help teams understand their agents. These tools should be able to tell teams when and why their agent goes awry, and offer a way to proactively prevent drift as improvements ship, new models get incorporated, and user behavior changes.
-                </p>
-              </div>
-            </RevealOnScroll>
-          </figure>
-
-          <figure className="mx-auto mt-12 max-w-[540px]">
-            <RevealOnScroll variant="media">
-              <MediaFrame>
-                <ImageBlock
-                  src="/prototype-index/langchain-alt/figjam.png"
-                  alt="FigJam diagram comparing LangSmith and Braintrust architecture with a proposed scalable solution."
-                />
-              </MediaFrame>
-            </RevealOnScroll>
-            <RevealOnScroll variant="text">
-              <div
-                className="mx-auto mt-6 max-w-[540px] space-y-[26px]"
-                style={{
-                  color: bodyMutedColor,
-                  fontFamily: bodyStyle.fontFamily,
-                  fontSize: bodyStyle.size,
-                  fontWeight: bodyStyle.weight,
-                  letterSpacing: bodyStyle.letterSpacing,
-                  lineHeight: bodyStyle.lineHeight,
-                }}
-              >
-                <p>
-                  After analyzing the high level architecture of Braintrust and LangSmith, it seems that both focus on single/siloed-team enablement. Neither tools allow for core elements like Evaluators, Company metrics, or Prompt structures to be reused or templatetized so more novice teams can quickly adopt best practices and glean value from the tool. In this FigJam I've abstracted each tool&apos;s current structure, limitations, and provided my own proposal for a more scalable solution.{" "}
-                  <ExternalTextLink href="https://www.figma.com/board/bNWDIHhae8N4BMmwGgCBLr/LangSmith---Braintrust-Architecture-Evaluation?node-id=0-1&t=V9j8EVGsr3cjdALm-1">
-                    See link to FigJam
-                  </ExternalTextLink>
-                </p>
-              </div>
-            </RevealOnScroll>
-          </figure>
-
         </section>
 
         <section className="mt-48">
