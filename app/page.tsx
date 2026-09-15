@@ -24,7 +24,7 @@ const bodyMutedColor = bodyStyle.color;
 const sections = [
   {
     id: "langchain-alt",
-    title: "LangChain Alt",
+    title: "AI Evaluator Exploration",
     company: "Intelligence",
     cta: "See Prototype",
     href: "/intelligence",
@@ -87,7 +87,7 @@ const sections = [
 const heroCards = [
   {
     section: sections[0],
-    label: "LangChain Alt",
+    label: "AI Evaluator Exploration",
     image: "/prototype-index/hero-cards/langchain-alt.png",
     rotation: -9,
     y: 7,
@@ -572,7 +572,7 @@ export default function HomePage() {
             lineHeight: bodyStyle.lineHeight,
           }}
         >
-          A collection of some projects across Meta and Mixpanel.
+          Meta + Mixpanel projects, and AI Evaluator explorations
         </p>
       </RevealOnScroll>
 
